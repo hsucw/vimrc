@@ -401,6 +401,8 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+" Remove Empty command line
+set cmdheight=1
 
 " Returns true if paste mode is enabled
 function! HasPaste()
