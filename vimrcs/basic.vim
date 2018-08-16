@@ -203,7 +203,6 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-<<<<<<< HEAD
 " Disable to show tab line
 set showtabline=0
 
@@ -211,8 +210,6 @@ set showtabline=0
 map j gj
 map k gk
 
-=======
->>>>>>> 587a185a98a3b7449da8bd8ff194fbc6c0199242
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
 map <c-space> ?
@@ -390,7 +387,6 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-<<<<<<< HEAD
 
 " Remove Empty command line
 set cmdheight=1
@@ -428,5 +424,3 @@ endfunction
  if has("autocmd")
    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
-=======
->>>>>>> 587a185a98a3b7449da8bd8ff194fbc6c0199242
